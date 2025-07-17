@@ -3,7 +3,7 @@ Cloudflare worker for custom CF One Gateway redirect page
 <img src="https://vplabs.us/redirect_page.png" alt="Custom CF One Gateway Redirect Page" width="600"/>
 
 1. Create a new worker and upload the worker.js code
-2. Modify the link to the logo and support info (Emailm URL and Phone) as needed:
+2. Modify the link to the logo and message as needed, countdown time can also be set here:
    ```
     <img id="logo" src="https://vplabs.us/acme_corp_logo.png">
     <h1>You Are Accessing A</h1>
