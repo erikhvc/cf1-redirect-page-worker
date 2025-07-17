@@ -16,4 +16,4 @@ Cloudflare worker for custom CF One Gateway redirect page
    https://<worker_name>.workers.dev/?targetUrl=https%3A%2F%2Fchatgpt.com
    ```
 
-<img src="https://vplabs.us/redirect_policy.png" alt="Gateway Redirect Settings" width="1100"/>
+<img src="https://vplabs.us/redirect_policy" alt="Gateway Redirect Settings" width="1100"/>
