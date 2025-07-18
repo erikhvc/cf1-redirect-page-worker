@@ -39,8 +39,8 @@ export default {
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     #logo {
-      height: auto;
-      width: auto;
+      height: 60;
+      width: 50;
     }
     .countdown {
       font-size: 24px;
@@ -70,18 +70,18 @@ export default {
 </head>
 <body>
   <div class="container">
-    <img id="logo" src="https://vplabs.us/acme_corp_logo.png">
-    <h1>You Are Accessing A</h1> 
-    <h1>Non-Sanctioned AI Tool</h1>
-    <h1>Redirecting to ${escapeHtml(safeUrl)}</h1>
-    <p>You will be automatically redirected in <span id="countdown" class="countdown">10</span> seconds</p>
+      <img id="logo" width="250" height="260" src="https://imagedelivery.net/ih4h24GjSpxgtoKR_JlczQ/218680b9-61eb-479c-e221-8b0938362500/public">
+      <h1>Esta accediendo a una</h1>
+      <h1>Aplicacion No-Aprobada de IA</h1>
+      <h1>Redirigiendo a ${escapeHtml(safeUrl)}</h1>
+      <p>Usted sera redirigido en <span id="countdown" class="countdown">10</span> segundos</p>
     
     <div class="progress-bar">
       <div class="progress"></div>
     </div>
     
     <p>
-      <a href="${safeUrl}">Click here</a> if you don't want to wait
+      <a href="${safeUrl}">Presiona aqui</a> si no quiere esperar
     </p>
   </div>
 
