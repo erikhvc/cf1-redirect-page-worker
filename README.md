@@ -7,7 +7,7 @@ Cloudflare worker para pagina personalizada de redirection para CF One Gateway
    ```
     <img id="logo" width="250" height="260" src="https://imagedelivery.net/ih4h24GjSpxgtoKR_JlczQ/218680b9-61eb-479c-e221-8b0938362500/public">
     <h1>Esta accediendo a una</h1>
-    <h1>Aplicacion No-Aprbada de AI</h1>
+    <h1>Aplicacion No-Aprobada de IA</h1>
     <h1>Redirigiendo a ${escapeHtml(safeUrl)}</h1>
     <p>Usted sera redirigido a en <span id="countdown" class="countdown">10</span> segundos</p>
    ```
