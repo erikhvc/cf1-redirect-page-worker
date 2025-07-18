@@ -1,6 +1,6 @@
 Cloudflare worker para pagina personalizada de redirection para CF One Gateway
 
-<img src="https://imagedelivery.net/ih4h24GjSpxgtoKR_JlczQ/9d72af37-4fbb-44c5-7c66-ba4beefba900/public" alt="Custom CF One Gateway Redirect Page" width="600"/>
+<img src="https://imagedelivery.net/ih4h24GjSpxgtoKR_JlczQ/e75d6a43-0778-4645-78cd-e2bb84e97100/public" alt="Custom CF One Gateway Redirect Page" width="600"/>
 
 1. Crea un nuevo worker y carga el codigo del archivo worker.js
 2. Modifica la liga del logo y la informacion conforme se nencesite, de igual manera el tiempo puede ser modificado aqui:
@@ -9,7 +9,7 @@ Cloudflare worker para pagina personalizada de redirection para CF One Gateway
     <h1>Esta accediendo a una</h1>
     <h1>Aplicacion No-Aprobada de IA</h1>
     <h1>Redirigiendo a ${escapeHtml(safeUrl)}</h1>
-    <p>Usted sera redirigido a en <span id="countdown" class="countdown">10</span> segundos</p>
+    <p>Usted sera redirigido en <span id="countdown" class="countdown">10</span> segundos</p>
    ```
 3. Agrega el siguiente url en la politica de CF One Gateway en la regla de redireccion "URL de redirección definida por política" y agrega `?targetUrl=` con la url a dirigir, e.g.:
    ```
