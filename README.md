@@ -1,19 +1,19 @@
-Cloudflare worker for custom CF One Gateway redirect page
+Cloudflare worker para pagina personalizada de redirection para CF One Gateway
 
 <img src="https://vplabs.us/custom_redirect_page.png" alt="Custom CF One Gateway Redirect Page" width="600"/>
 
-1. Create a new worker and upload the worker.js code
-2. Modify the link to the logo and message as needed, countdown time can also be set here:
+1. Crea un nuevo worker y carga el codigo del archivo worker.js
+2. Modifica la liga del logo y la informacion conforme se nencesite, de igual manera el tiempo puede ser modificado aqui:
    ```
-    <img id="logo" src="https://vplabs.us/acme_corp_logo.png">
-    <h1>You Are Accessing A</h1>
-    <h1>Non-Sanctioned AI Tool</h1>
-    <h1>Redirecting to ${escapeHtml(safeUrl)}</h1>
-    <p>You will be automatically redirected in <span id="countdown" class="countdown">10</span> seconds</p>
+    <img id="logo" width="250" height="260" src="https://imagedelivery.net/ih4h24GjSpxgtoKR_JlczQ/218680b9-61eb-479c-e221-8b0938362500/public">
+    <h1>Esta accediendo a una</h1>
+    <h1>Aplicacion No-Aprbada de AI</h1>
+    <h1>Redirigiendo a ${escapeHtml(safeUrl)}</h1>
+    <p>Usted sera redirigido a en <span id="countdown" class="countdown">10</span> segundos</p>
    ```
-3. Place the following url link in you CF One Gateway redirect rule within the "Policy URL redirect" and add the `?targetUrl=` with your custom redirect url, e.g.:
+3. Agrega el siguiente url en la politica de CF One Gateway en la regla de redireccion "URL de redirección definida por política" y agrega `?targetUrl=` con la url a dirigir, e.g.:
    ```
    https://<worker_name>.workers.dev/?targetUrl=https%3A%2F%2Fchatgpt.com
    ```
 
-<img src="https://vplabs.us/redirect_gw_policy.png" alt="Gateway Redirect Settings" width="1100"/>
+<img src="https://imagedelivery.net/ih4h24GjSpxgtoKR_JlczQ/bae5502b-01bd-4c47-3d97-75b6c9aeb000/public" alt="Gateway Redirect Settings" width="1100"/>
